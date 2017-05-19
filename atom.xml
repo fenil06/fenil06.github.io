@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fenil.io/"/>
-  <updated>2017-05-19T02:44:01.112Z</updated>
+  <updated>2017-05-19T02:47:42.729Z</updated>
   <id>http://fenil.io/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="http://fenil.io/2017/05/18/Server/"/>
     <id>http://fenil.io/2017/05/18/Server/</id>
     <published>2017-05-19T02:15:19.000Z</published>
-    <updated>2017-05-19T02:44:01.112Z</updated>
+    <updated>2017-05-19T02:47:42.729Z</updated>
     
     <content type="html"><![CDATA[<p>Golang Rules!!!!! I recently have started researching this language to create a rest API that I can use with applications I will be creating. Before jumping into directly creating the rest API, I wanted to make sure I learn all the details on how the net/http package works. I will be building this application slowly so it will be spanning multiple post.</p>
 <a id="more"></a>
 <p>I created a simple http server that prints a message when its running. For example, if the http server is listening on localhost:8080 and you visit it with the following url - localhost:8080/linef then it will serve a page with the following text: ‘Hi there, I love linef!’.</p>
 <p>The code to the application is as follows:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(&apos;Hello World!&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">package main</div><div class="line"></div><div class="line">import (</div><div class="line">    &quot;fmt&quot;</div><div class="line">    &quot;net/http&quot;</div><div class="line">)</div><div class="line"></div><div class="line">func handler(w http.ResponseWriter, r *http.Request) &#123;</div><div class="line">    fmt.Fprintf(w, &quot;Hi there, I love %s!&quot;, r.URL.Path[1:])</div><div class="line">&#125;</div><div class="line"></div><div class="line">func main() &#123;</div><div class="line">    http.HandleFunc(&quot;/&quot;, handler)</div><div class="line">    http.ListenAndServe(&quot;:8080&quot;, nil)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
