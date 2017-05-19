@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fenil.io/"/>
-  <updated>2017-05-18T03:22:07.781Z</updated>
+  <updated>2017-05-19T02:44:01.112Z</updated>
   <id>http://fenil.io/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>A Simple Go http Server</title>
+    <link href="http://fenil.io/2017/05/18/Server/"/>
+    <id>http://fenil.io/2017/05/18/Server/</id>
+    <published>2017-05-19T02:15:19.000Z</published>
+    <updated>2017-05-19T02:44:01.112Z</updated>
+    
+    <content type="html"><![CDATA[<p>Golang Rules!!!!! I recently have started researching this language to create a rest API that I can use with applications I will be creating. Before jumping into directly creating the rest API, I wanted to make sure I learn all the details on how the net/http package works. I will be building this application slowly so it will be spanning multiple post.</p>
+<a id="more"></a>
+<p>I created a simple http server that prints a message when its running. For example, if the http server is listening on localhost:8080 and you visit it with the following url - localhost:8080/linef then it will serve a page with the following text: ‘Hi there, I love linef!’.</p>
+<p>The code to the application is as follows:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(&apos;Hello World!&apos;);</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Golang Rules!!!!! I recently have started researching this language to create a rest API that I can use with applications I will be creating. Before jumping into directly creating the rest API, I wanted to make sure I learn all the details on how the net/http package works. I will be building this application slowly so it will be spanning multiple post.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="go httpserver" scheme="http://fenil.io/tags/go-httpserver/"/>
+    
+  </entry>
   
   <entry>
     <title>An app a day! Also...My First Blog!</title>
